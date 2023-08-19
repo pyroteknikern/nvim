@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nyoom-engineering/oxocarbon.nvim'
 
+  use 'lervag/vimtex'
+
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
