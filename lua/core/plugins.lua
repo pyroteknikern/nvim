@@ -27,6 +27,14 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
+
+  use "nvim-lua/plenary.nvim"
+
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "neovim/nvim-lspconfig"
+  use "williamboman/mason-lspconfig.nvim"
+  use "williamboman/mason.nvim"
+
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
