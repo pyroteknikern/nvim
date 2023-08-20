@@ -33,8 +33,7 @@ vim.g.vimtex_syntax_conceal = {
 vim.g.vimtex_quickfix_ignore_mode = 0
 vim.g.vimtex_compiler_progname = "nvr"
 -- PDF viewer settings
-vim.g.vimtex_view_general_viewer = "SumatraPDF"
-vim.g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
+vim.g.vimtex_view_method = "zathura"
 -- Do not auto open quickfix on compile erros
 vim.g.vimtex_quickfix_mode = 0
 -- Latex warnings to ignore
