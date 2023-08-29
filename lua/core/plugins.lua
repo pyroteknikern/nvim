@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'nyoom-engineering/oxocarbon.nvim'
+  use 'Mofiqul/dracula.nvim'
 
   use 'lervag/vimtex'
 
