@@ -16,8 +16,9 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'Mofiqul/dracula.nvim'
-
+  use { "catppuccin/nvim", as = "catppuccin" }
+--  use 'numirias/semshi'
+  use 'vim-python/python-syntax'
   use 'lervag/vimtex'
 
   use 'hrsh7th/nvim-cmp'
