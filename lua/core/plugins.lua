@@ -35,7 +35,13 @@ return require('packer').startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/mason-lspconfig.nvim"
   use "williamboman/mason.nvim"
-
+  use {
+            'nvim-treesitter/nvim-treesitter',
+            run = function()
+                local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+                ts_update()
+            end,
+      }
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
