@@ -5,6 +5,7 @@ lspconfig.tsserver.setup {}
 lspconfig.rust_analyzer.setup {}
 lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
+lspconfig.zls.setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
