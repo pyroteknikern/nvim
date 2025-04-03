@@ -1,15 +1,11 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pylsp.setup {}
-lspconfig.ts_ls.setup {}
+lspconfig.tsserver.setup {}
 lspconfig.rust_analyzer.setup {}
 lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
 lspconfig.zls.setup {}
-lspconfig.jdtls.setup {}
-
-
-
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
