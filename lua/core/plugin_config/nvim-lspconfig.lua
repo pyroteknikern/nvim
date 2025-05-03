@@ -6,6 +6,30 @@ lspconfig.rust_analyzer.setup {}
 lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
 lspconfig.zls.setup {}
+lspconfig.texlab.setup ({
+  settings = {
+    texlab = {
+      build = {
+        args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
+        executable = "latexmk",  -- Use latexmk for building
+        forwardSearchAfter = true,  -- Automatically open the PDF after building
+        onSave = true,  -- Automatically build when saving
+      },
+      forwardSearch = {
+        executable = "zathura",  -- Tells texlab to use Zathura for forward search
+        args = { 
+          "--synctex-forward",  -- The option that tells Zathura to use synctex for forward search
+          "%l:1:%f",            -- The line and file to jump to
+          "%p"                  -- The PDF file to open
+        },
+      },
+      chktex = {
+        onEdit = true,  -- Enable linting while editing
+        onOpenAndSave = true,  -- Enable linting on open and save
+      },
+    },
+  },
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

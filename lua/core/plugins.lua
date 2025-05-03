@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
 --  use 'numirias/semshi'
   use 'vim-python/python-syntax'
-  use 'lervag/vimtex'
+  --use 'lervag/vimtex'
 
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
