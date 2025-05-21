@@ -6,6 +6,7 @@ lspconfig.rust_analyzer.setup {}
 lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
 lspconfig.zls.setup {}
+lspconfig.jdtls.setup {}
 lspconfig.texlab.setup ({
   settings = {
     texlab = {
