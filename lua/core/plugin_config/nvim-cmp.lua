@@ -97,16 +97,17 @@ cmp.setup({
       cmp.config.compare.offset,
       cmp.config.compare.exact,
       cmp.config.compare.score,
-      function(entry1, entry2)
+   --   function(entry1, entry2)
         -- Remove duplicates by comparing label + source
-        if entry1.completion_item.label == entry2.completion_item.label then
-          if entry1.source.name == "nvim_lsp" then
-            return true
-          elseif entry2.source.name == "nvim_lsp" then
-            return false
-          end
-        end
-      end,
+   --     if entry1.completion_item.label == entry2.completion_item.label then
+   --         if entry1.source.name == "nvim_lsp" then
+   --         return true
+   --         elseif entry2.source.name == "nvim_lsp" then
+   --         return false
+   --         end
+   --     end
+   --     return false -- <--- important!
+   --     end,
       cmp.config.compare.recently_used,
       cmp.config.compare.kind,
       cmp.config.compare.sort_text,
