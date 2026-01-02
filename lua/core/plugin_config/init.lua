@@ -7,7 +7,7 @@ require("core.plugin_config.vimtex")
 
 require("core.plugin_config.plenary")
 
-require("core.plugin_config.null_ls")
+--require("core.plugin_config.null_ls")
 require("core.plugin_config.mason")
 --require("core.plugin_config.nvim-lspconfig")
 
