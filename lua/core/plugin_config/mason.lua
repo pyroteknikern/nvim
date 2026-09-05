@@ -1,6 +1,27 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
--- Global mappings.
+
+
+require("mason-lspconfig").setup({
+    automatic_enable=false
+})
+vim.lsp.config("clangd", {
+    cmd = {
+        "clangd",
+        "--query-driver=/home/arvyd/.platformio/packages/toolchain-gccarmnoneeabi-teensy/bin/arm-none-eabi-g++",
+    },
+})
+
+vim.lsp.enable({
+    "clangd",
+    "pylsp",
+    "ts_ls",
+    "rust_analyzer",
+    "gopls",
+    "zls",
+    "jdtls",
+    "texlab",
+})
+
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

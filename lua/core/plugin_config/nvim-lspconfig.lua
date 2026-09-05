@@ -3,8 +3,14 @@ local lspconfig = require('lspconfig')
 lspconfig.pylsp.setup {}
 lspconfig.ts_ls.setup {}
 lspconfig.rust_analyzer.setup {}
-lspconfig.clangd.setup {}
 lspconfig.gopls.setup {}
+
+lspconfig.clangd.setup {
+    cmd = {
+        "clangd",
+        "--query-driver=/home/arvyd/.platformio/packages/toolchain-gccarmnoneeabi-teensy/bin/arm-none-eabi-g++",
+    },
+}
 lspconfig.zls.setup {}
 lspconfig.jdtls.setup {}
 lspconfig.texlab.setup ({
